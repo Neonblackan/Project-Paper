@@ -115,11 +115,16 @@
 
 .prodact__container {
     margin-top: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+    row-gap: 30px;
+    position: relative;
+    margin-bottom: 90px;
 }
 
 
 
-.img__prodact {
+.img__prodact-groups {
     min-width: 330px;
     max-height: 180px;
     position: relative;
@@ -127,13 +132,15 @@
     display: flex;
 }
 
-.img__prodact:before {
+.img__prodact-groups::after {
     content: "";
-    background-image: url(images/hero/bagroun__product.svg) ;
-    background:  cover no-repeat;
+    background-image: url(images/hero/bagroun__product.svg);
+    background: cover no-repeat;
     display: block;
     position: absolute;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    
 }
 
 
@@ -141,7 +148,6 @@
 
 .prodact-1 {
     position: absolute;
-    left: 18px;
     top: 51px;
 
 }
@@ -156,7 +162,121 @@
 
 .prodact-3 {
     position: absolute;
-    left: 102px;
+    left: 84px;
     top: 51px;
+
+}
+
+.prodact-4 {
+    left: 44px;
+    position: absolute;
+}
+
+.prodact-7 {
+    left: 44px;
+    position: absolute;
+
+}
+
+.prodact-10 {
+    left: 33px;
+    position: absolute;
+
+}
+
+.prodact-11 {
+    left: 88px;
+    position: absolute;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.offers__lists {
+    display: flex;
+    width: 100%;
+    margin-top: 200px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.offers__list {
+    margin-right: 30px;
+    min-width: 301px;
+    min-height: 155px;
+
+
+
+}
+
+.titel-items {
+    color: #666;
+    font-family: 'Roboto';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+
+}
+
+.quantity-itens {
+    color: #B5B5BD;
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.info-items {
+    color: #85859B;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 170%;
+    text-align: left;
+
+}
+
+.link-info {
+    color: #7875FE;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+
+}
+
+
+.link {
+    margin-top: 20px;
+
+}
+
+.link-info::after {
+    content: "";
+    background-image: url(images/hero/Стрелка.svg);
+    width: 100%;
+    background: no-repeat;
+    position: absolute;
 
 }
