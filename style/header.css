@@ -17,9 +17,25 @@
     color: #7875FE;
     padding-bottom: 7px;
     border-bottom: 3px solid;
+    transition: 0.3s;
 
 }
 
-.search__header{
+.search__header {
     margin-right: 30px;
+}
+
+.search__header:hover {
+    padding-bottom: 7px;
+    border-bottom: 3px solid #7875FE;
+    transition: 0.3s;
+
+}
+
+.enter__header:hover {
+    padding-bottom: 7px;
+    border-bottom: 3px solid #7875FE;
+    transition: 0.3s;
+    
+
 }

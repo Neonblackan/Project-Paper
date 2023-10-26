@@ -97,10 +97,66 @@
 }
 
 .slider {
-    border: 1px solid #C0C0C0;
-    min-width:350px;
+    border: 2px solid #C0C0C0;
+    min-width: 350px;
     flex-shrink: 0;
     margin-right: 30px;
-   
+
+
+}
+
+.slider:hover {
+
+    border: 2px solid #7875FE;
+    transition: 0.4s;
+
+
+}
+
+.prodact__container {
+    margin-top: 90px;
+}
+
+
+
+.img__prodact {
+    min-width: 330px;
+    max-height: 180px;
+    position: relative;
+    flex-wrap: nowrap;
+    display: flex;
+}
+
+.img__prodact:before {
+    content: "";
+    background-image: url(images/hero/bagroun__product.svg) ;
+    background:  cover no-repeat;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+
+.prodact-1 {
+    position: absolute;
+    left: 18px;
+    top: 51px;
+
+}
+
+.prodact-2 {
+    position: absolute;
+    overflow: hidden;
+    z-index: +1;
+    left: 68px;
+    top: 22px;
+}
+
+.prodact-3 {
+    position: absolute;
+    left: 102px;
+    top: 51px;
 
 }
